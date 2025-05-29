@@ -17,10 +17,10 @@ class Pregcare extends StatefulWidget {
 class _PregcareState extends State<Pregcare> {
   List pages = [
     MMain(),
-    Baby(),
+    const Baby(),
     BotPage(),
-    MyTools(),
-    MyProfile(),
+    const MyTools(),
+    const MyProfile(),
   ];
 
   var _currentIndex = 0;

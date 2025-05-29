@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:pregcare/auth/login_controller.dart';
 import 'package:pregcare/widgets/m_dialogue.dart';
 
 class MyDrawer extends StatelessWidget {

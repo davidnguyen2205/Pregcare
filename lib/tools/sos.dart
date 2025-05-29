@@ -21,10 +21,10 @@ class SOS {
             );
           }));
 
-      String? myNumber = await prefs.getString("myNumber");
-      String? friend = await prefs.getString("friendNumber");
-      String? ambulence = await prefs.getString("ambulenceNumber");
-      String? hospital = await prefs.getString("hospitalNumber");
+      String? myNumber = prefs.getString("myNumber");
+      String? friend = prefs.getString("friendNumber");
+      String? ambulence = prefs.getString("ambulenceNumber");
+      String? hospital = prefs.getString("hospitalNumber");
 
       String uri = "https://pregcare.000webhostapp.com/sms/index.php";
 

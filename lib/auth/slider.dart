@@ -4,7 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 class CarouselSliderWidget extends StatefulWidget {
   final List<Features> features;
 
-  CarouselSliderWidget({required this.features});
+  const CarouselSliderWidget({super.key, required this.features});
 
   @override
   _CarouselSliderWidgetState createState() => _CarouselSliderWidgetState();

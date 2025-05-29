@@ -57,11 +57,11 @@ class MMain extends StatelessWidget {
 
   void _sendSMS(String message, List<String> recipents) async {
     try {
-      String _result = await sendSMS(message: message, recipients: recipents)
+      String result = await sendSMS(message: message, recipients: recipents)
           .catchError((onError) {
         print(onError);
       });
-      print(_result);
+      print(result);
     } catch (e) {
       print(e);
     }

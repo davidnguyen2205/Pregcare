@@ -5,7 +5,7 @@ class MomTileCrad extends StatelessWidget {
   final String title_text;
   final String image_url;
   final String openUrl;
-  MomTileCrad(
+  const MomTileCrad(
       {super.key,
       required this.title_text,
       required this.image_url,

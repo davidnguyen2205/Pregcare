@@ -1,7 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pregcare/auth/login.dart';
 import 'package:pregcare/auth/login_controller.dart';
 import 'package:pregcare/mom/m_kick.dart';
 import 'package:pregcare/baby/b_store.dart';

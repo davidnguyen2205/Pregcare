@@ -3,6 +3,8 @@ import 'package:pregcare/pages/pregcare.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SosNumbersForm extends StatefulWidget {
+  const SosNumbersForm({super.key});
+
   @override
   _SosNumbersFormState createState() => _SosNumbersFormState();
 }
@@ -43,7 +45,7 @@ class _SosNumbersFormState extends State<SosNumbersForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Add Your Emergency Numbers")),
+      appBar: AppBar(title: const Text("Add Your Emergency Numbers")),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -54,7 +56,7 @@ class _SosNumbersFormState extends State<SosNumbersForm> {
                 TextFormField(
                   controller: _myNumberController,
                   keyboardType: TextInputType.phone,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'My Number',
                   ),
                   validator: (value) {
@@ -64,11 +66,11 @@ class _SosNumbersFormState extends State<SosNumbersForm> {
                     return null;
                   },
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 TextFormField(
                   controller: _friendNumberController,
                   keyboardType: TextInputType.phone,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Close Friend Number',
                   ),
                   validator: (value) {
@@ -78,11 +80,11 @@ class _SosNumbersFormState extends State<SosNumbersForm> {
                     return null;
                   },
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 TextFormField(
                   controller: _ambulanceNumberController,
                   keyboardType: TextInputType.phone,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Ambulance Number',
                   ),
                   validator: (value) {
@@ -92,11 +94,11 @@ class _SosNumbersFormState extends State<SosNumbersForm> {
                     return null;
                   },
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 TextFormField(
                   controller: _hospitalNumberController,
                   keyboardType: TextInputType.phone,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Hospital Number',
                   ),
                   validator: (value) {
@@ -106,7 +108,7 @@ class _SosNumbersFormState extends State<SosNumbersForm> {
                     return null;
                   },
                 ),
-                SizedBox(height: 32),
+                const SizedBox(height: 32),
                 ElevatedButton(
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
@@ -114,11 +116,11 @@ class _SosNumbersFormState extends State<SosNumbersForm> {
                       saveNumbers();
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => Pregcare()),
+                        MaterialPageRoute(builder: (context) => const Pregcare()),
                       );
                     }
                   },
-                  child: Text('Save SOS Numbers'),
+                  child: const Text('Save SOS Numbers'),
                 ),
               ],
             ),

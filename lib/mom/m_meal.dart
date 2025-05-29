@@ -336,7 +336,7 @@ class _MealPlanState extends State<MealPlan> {
                   child: Row(
                     children: categories.map((category) {
                       return Padding(
-                        padding: EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(5),
                         child: ChoiceChip(
                           label: Text(category),
                           selected: selectedCategory == category,
@@ -350,7 +350,7 @@ class _MealPlanState extends State<MealPlan> {
                     }).toList(),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
               ],

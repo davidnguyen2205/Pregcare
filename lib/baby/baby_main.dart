@@ -31,23 +31,23 @@ class Baby extends StatelessWidget {
         ),
         body: Container(
           padding: const EdgeInsets.all(8.0),
-          color: Color.fromARGB(255, 238, 238, 238),
+          color: const Color.fromARGB(255, 238, 238, 238),
           child: ContainedTabBarView(
             tabs: [
               Container(
-                child: Text(
+                child: const Text(
                   'Before Birth',
                   style: TextStyle(fontSize: 18, color: Colors.black),
                 ),
               ),
               Container(
-                child: Text(
+                child: const Text(
                   'After Birth',
                   style: TextStyle(fontSize: 18, color: Colors.black),
                 ),
               ),
             ],
-            views: [
+            views: const [
               bbirth(),
               abirth(),
             ],

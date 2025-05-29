@@ -5,6 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'messages.dart';
 
 class BotPage extends StatefulWidget {
+  const BotPage({super.key});
+
   @override
   _BotPageState createState() => _BotPageState();
 }
@@ -36,13 +38,13 @@ class _BotPageState extends State<BotPage> {
           children: [
             Expanded(child: MessagesScreen(messages: messages)),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-              color: Color.fromARGB(255, 31, 17, 55),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              color: const Color.fromARGB(255, 31, 17, 55),
               child: Row(
                 children: [
                   Expanded(
                       child: TextField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: "ask question",
                         hintStyle: TextStyle(color: Colors.white),
                         focusedBorder: UnderlineInputBorder(
@@ -51,14 +53,14 @@ class _BotPageState extends State<BotPage> {
                         enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.white))),
                     controller: _controller,
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                   )),
                   IconButton(
                       onPressed: () {
                         sendMessage(_controller.text);
                         _controller.clear();
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.send,
                         color: Colors.white,
                       ))

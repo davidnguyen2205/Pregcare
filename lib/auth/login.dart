@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:pregcare/auth/login_controller.dart';
 import 'package:pregcare/auth/slider.dart';
-import 'package:pregcare/utils/routes.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});

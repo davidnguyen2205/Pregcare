@@ -36,7 +36,7 @@ class ProductList extends StatelessWidget {
                 fit: BoxFit.cover,
                 height: 75,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Text(
@@ -46,7 +46,7 @@ class ProductList extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               SizedBox(

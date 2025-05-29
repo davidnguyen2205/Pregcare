@@ -20,7 +20,7 @@ class _MKickCountState extends State<MKickCount> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Kick Count"),
+        title: const Text("Kick Count"),
       ),
       body: Center(
         child: Column(
@@ -32,18 +32,18 @@ class _MKickCountState extends State<MKickCount> {
                   "assets/images/footprint.png",
                   width: 120,
                 )),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             const Text(
               'Baby kick count on first kick',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
