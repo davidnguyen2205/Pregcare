@@ -1,19 +1,14 @@
-import 'dart:convert';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pregcare/tools/sos.dart';
 import 'package:pregcare/widgets/m_drawer.dart';
 import 'package:pregcare/utils/routes.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_sms/flutter_sms.dart';
 import '../auth/login_controller.dart';
-import '../tools/sos_details.dart';
 import '../widgets/cards.dart';
-import 'package:http/http.dart' as http;
 
 class MMain extends StatelessWidget {
   final controller = Get.put(LoginController());

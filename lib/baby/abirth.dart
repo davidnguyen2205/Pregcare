@@ -16,7 +16,7 @@ class _abirth extends State<abirth> {
         title_text: "Feeding",
         image_url: "assets/images/Breastfeeding.png",
         openUrl: PregcareRoutes().momWeightRoute),
-    MomTileCrad(
+    const MomTileCrad(
         title_text: "Sleep",
         image_url: "assets/images/sleep.png",
         openUrl: "hello"),

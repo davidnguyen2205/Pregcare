@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pregcare/utils/routes.dart';
 
 class MomTileCrad extends StatelessWidget {
   final String title_text;

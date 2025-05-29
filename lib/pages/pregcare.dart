@@ -18,7 +18,7 @@ class _PregcareState extends State<Pregcare> {
   List pages = [
     MMain(),
     const Baby(),
-    BotPage(),
+    const BotPage(),
     const MyTools(),
     const MyProfile(),
   ];
